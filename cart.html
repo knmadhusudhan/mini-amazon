@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cart</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<header style="color:none;background-color: none;">
+    <a href="index.html" style="float:right;color:rgb(18, 16, 16);font-weight: bolder;margin:70px;">back</a>
+    
+<h2>Your Cart</h2>
+</header>
+<div class="cartvalues">
+<div id="cartItems"></div>
+
+<h3>Total:$<span id="total">0</span></h3>
+
+<a href="checkout.html">
+    <button id="check-out-btn">proceed to checkout</button>
+</a>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+displayCart();
+</script>
+
+</body>
+</html>

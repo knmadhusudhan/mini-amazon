@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Checkout</title>
+
+</head>
+
+<body>
+
+<header>
+    <a href="cart.html" style="float:right;color:rgb(18, 16, 16);font-weight: bolder;margin-top:70px;">back</a>
+<h2>Checkout</h2>
+</header>
+<div calss="checkedvalues">
+<p>Subtotal: ₹<span id="subtotal"></span></p>
+<p>Tax (18%): ₹<span id="tax"></span></p>
+<p>Shipping: ₹<span id="shipping"></span></p>
+
+<h3>Grand Total: ₹<span id="grandTotal"></span></h3>
+
+<button onclick="placeOrder()">Place Order</button>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+checkout();
+</script>
+
+</body>
+</html>

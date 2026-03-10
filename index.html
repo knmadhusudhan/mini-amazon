@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI AMAZON</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="headerwrap">
+            <div class="logowrap">
+                <i class="fa-solid fa-bars"></i>
+                <img src="images/amazonlogo.png" alt="amazonlogo" class="amazonlogo" />
+            </div>
+            <div class="search-bar">
+               <select class="dropproducts" id="dropdown">
+                    <option value="All">All</option>
+                    <option value="shirt">shirt</option>
+                    <option value="groceries">groceries</option>
+                    <option value="kitchenproducts">kitchenproducts</option>
+                    <option value="toys">toys</option>
+                    <option value="bikes">bikes</option>
+                    <option value="toys">toys</option>
+                    <option value="electronicproducts">electronic</option>
+                    <option value="groceries">groceries</option>
+                    <option value="kitchenproducts">kitchenproducts</option>
+                    <option value="toys">toys</option>
+                    <option value="bikes">bikes</option>
+                    <option value="bikes">bikes</option>
+                    <option value="electronicproducts">electronic</option>
+                    <option value="groceries">groceries</option>
+                    <option value="kitchenproducts">kitchenproducts</option>
+                    <option value="toys">toys</option>
+                    <option value="bikes">bikes</option>
+                    <option value="kitchenproducts">kitchenproducts</option>
+                    <option value="electronicproducts">electronic</option>
+                    <option value="groceries">groceries</option>
+                    <option value="kitchenproducts">kitchenproducts</option>
+                    <option value="toys">toys</option>
+                    <option value="bikes">bikes</option>
+                    <option value="toys">toys</option>
+                    <option value="electronicproducts">electronic</option>
+                    <option value="groceries">groceries</option>
+                    <option value="kitchenproducts">kitchenproducts</option>
+                    <option value="toys">toys</option>
+                    <option value="bikes">bikes</option>
+                    <option value="groceries">groceries</option>
+                    <option value="electronicproducts">electronic</option>
+                    <option value="groceries">groceries</option>
+                    <option value="kitchenproducts">kitchenproducts</option>
+                    <option value="toys">toys</option>
+                    <option value="bikes">bikes</option>
+                </select>
+                <input type="search" id="searchinput" class="searchProducts" placeholder="Search Amazon.in"
+                    onkeyup="searchProducts()" />
+                <img src="images/search.png" alt="search" class="search" />
+            </div>
+            <div class="dropdown">
+                <img src="images/india.png" alt="india.png" class="flag" />
+                <span>EN</span>
+                <select class="select">
+
+                    <option value="Telugu">Telugu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="English">English</option>
+                    <option value="Kannada">Kannada</option>
+                    <option value="Urdu">Urdu</option>
+                </select>
+            </div>
+            <div class="cart">
+           <a href="cart.html"> <i class="fa-solid fa-cart-arrow-down" id="cart"></i></a>
+            <p style="color:rgba(245, 169, 4,0.9);font-weight: bolder;margin-right:10px;">Cart</p>
+            </div>
+        </div>
+    </header>
+    <div id="products"></div>
+    <script src="script.js">
+
+        
+    </script>
+    <script>
+displayProducts();
+</script>
+
+
+</body>
+
+</html>
