@@ -1,2 +1,2 @@
 # mini-amazon
- Resposive  Amazon-Clone built with  HTML , CSS , JavaScript.
+ Resposive  Amazon-Clone built with  HTML , CSS ,Bootstrap,Javascript.
