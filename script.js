@@ -182,6 +182,16 @@ cartItems.innerHTML += `
 totalEl.innerText = total;
 
 }
+//product details
+function showProducts(id){
+
+const product = products.find(p => p.id === id);
+
+localStorage.setItem("selectedProduct", JSON.stringify(product));
+
+window.location.href = "productdetails.html";
+
+}
 
 
 // Checkout Calculation

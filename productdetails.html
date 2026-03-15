@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTDETAILS</title>
+    <style>
+        body{
+            background-color: rgb(36, 6, 6);
+        }
+        .productdetails{
+            display:flex;
+            gap:10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .imagedetails{
+            height:fit-content;
+            width:fit-content;
+            color:rgb(27, 17, 17);
+            background-color: rgb(86, 86, 198);
+            border-radius:10px;
+            
+        
+        }
+        img{
+            background-color:rgb(194, 18, 18);
+            box-shadow:0px 0px 0px 0px black;
+            filter:brightness(80%);
+            border-radius:10px 10px 0px 0px;
+            
+        }
+        .description{
+            height:300px;
+            width:250px;
+            background-color:whitesmoke;
+            color:rgb(16, 17, 18);
+            padding-left: 30px;
+            border-radius:10px;
+        }
+        a{
+            height:20px;
+            width:70px;
+            background-color: greenyellow;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bolder;
+            position:fixed;
+            top:0px;
+            right:0px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="productDetails" class="products"></div>
+
+<script>
+
+const product = JSON.parse(localStorage.getItem("selectedProduct"));
+
+document.getElementById("productDetails").innerHTML = `
+<div class="productdetails">
+    <div class="imagedetails">
+<img src="${product.image}" width="300">
+<h2>${product.name}</h2>
+<p>₹${product.price}</p>
+</div>
+<div class="description">
+<pre>${product.description}</pre>
+</div>
+</div>
+<a href="index.html">Back</a>
+`;
+
+</script>
+</body>
+</html>
